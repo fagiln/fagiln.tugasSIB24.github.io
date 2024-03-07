@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+  </head>
+  <body>
+    <div>
+      <form action="">
+        <label for="nama">Nama</label><br />
+        <input
+          type="text"
+          name="nama"
+          id="nama"
+          placeholder="Nama Lengkap"
+          required
+        /><br />
+
+        <label for="email">Email</label><br />
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Email aktif"
+          required
+        /><br />
+
+        <label for="nohp">No Hp</label><br />
+        <input
+          type="tel"
+          name="nohp"
+          id="nohp"
+          placeholder="No HP aktif"
+          required
+        /><br />
+
+        <label for="">Jenis Kelamin</label><br />
+        <input type="radio" name="jk" id="lakilaki" value="lakilaki" required />
+        <label for="lakilaki">Laki-Laki</label><br />
+        <input
+          type="radio"
+          name="jk"
+          id="perempuan"
+          value="perempuan"
+          required
+        />
+        <label for="perempuan">Perempuan</label>
+        <br />
+
+        <label for="prodi">Prodi</label>
+        <select name="prodi" id="prodi" required>
+          <option value="">Pilih Prodi</option>
+          <option value="teknikInformatika">Teknik Informatika</option>
+          <option value="teknikkomputer">Teknik Komputer</option>
+          <option value="manajemenInformatika">Manajemen Informatika</option>
+        </select>
+        <br />
+
+        <label for="hobi">Hobi</label><br />
+        <input type="checkbox" name="membaca" id="membaca" />
+        <label for="membaca">Membaca</label><br />
+        <input type="checkbox" name="menulis" id="menulis" />
+        <label for="menulis">Menulis</label><br />
+        <input type="checkbox" name="menyanyi" id="menyanyi" />
+        <label for="menyanyi">Menyanyi</label><br />
+        <input type="checkbox" name="olahraga" id="olahraga" />
+        <label for="olahraga">Olahraga</label><br />
+
+        <label for="alamat">Alamat</label>
+        <br />
+        <textarea
+          name="alamat"
+          id="alamat"
+          cols="30"
+          rows="5"
+          required
+        ></textarea>
+        <br />
+
+        <label for="foto_diri">Foto Diri</label><br />
+        <input type="file" name="foto_diri" id="foto_diri" required /><br />
+
+        <button>Daftar</button>
+      </form>
+    </div>
+  </body>
+</html>
