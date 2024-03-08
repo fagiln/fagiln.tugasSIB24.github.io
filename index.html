@@ -4,44 +4,140 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TugasSIB24</title>
+    <link rel="shortcut icon" href="assets/img/klipartz.com.png" type="image/x-icon">
+    <!-- CDN poppins google -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
+    <!-- style CSS -->
     <link rel="stylesheet" href="css/landingPage.css" />
-    <script src="js/landing.js"></script>
+    <!-- script JS -->
+    <script src="js/landing.js" defer></script>
   </head>
 
   <body>
     <nav>
-      <a href="">
-        <img src="" alt="" />
-      </a>
-      <h3>Digital Dev</h3>
+      <div class="custom-container">
+        <div>
+          <a href="">
+            <img
+              src="assets/img/klipartz.com.png"
+              alt=""
+              style="height: 80px"
+            />
+          </a>
+          <h3>Wonderful Sumenep</h3>
+        </div>
+        <div>
+          <ul>
+            <li>
+              <a href="pages/form.html">
+                <button class="button">Go Form</button>
+              </a>
+            </li>
+            <li>
+              <a href="pages/jsDasar.html">
+                <button class="button">Go JS</button>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </nav>
 
-    <div>
-        <div class="coraousel">
-         
+    <div style="display: flex; justify-content: center">
+      <div class="custom-container">
+        <h2 style="color: #08788c">Hello,</h2>
+        <h2>Welcome to Sumenep</h2>
+        <br />
+
+        <div
+          style="
+            padding: 0 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 50px;
+          "
+        >
+          <div style="width: 50%">
+            <h4>What is Sumenep?</h4>
+            <br />
+            <p style="text-align: justify">
+              Sumenep, situated in the eastern part of Java Island, boasts a
+              blend of historical charm and natural splendor. The town serves as
+              the administrative center of Sumenep Regency, which encompasses
+              various islands in the Madura Strait. Historically, Sumenep was a
+              prominent center of the Madura Kingdom, dating back to the 13th
+              century. The remnants of this heritage are visible in its
+              architecture, including the Sumenep Palace (Kraton Sumenep), which
+              stands as a testament to the regency's royal past. The palace,
+              with its traditional Javanese design, offers insights into the
+              region's cultural and historical roots. Culturally, Sumenep is
+              renowned for its traditional arts, including dance, music, and
+              crafts. The town hosts various cultural events and performances,
+              showcasing the rich heritage of the Madurese people. Traditional
+              ceremonies and rituals are also integral to the local way of life,
+              reflecting the deep-rooted customs and beliefs of the community.
+            </p>
+          </div>
+          <div>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1980.004579933723!2d113.85867854137514!3d-7.00820358592984!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd9e42aa8c36d13%3A0x359a5c2b7c4e8b76!2sMasjid%20Agung%20Jamik%20Sumenep!5e0!3m2!1sid!2sid!4v1709924885705!5m2!1sid!2sid"
+              width="400"
+              height="300"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
         </div>
-        <h3>We are ready for Develope your fantastic Website</h3>
+        <main class="carousel-container">
+          <div class="carousel">
+            <div class="item active">
+              <img
+                src="https://asset.kompas.com/crops/zcY-OTHq7Jn0Gri4CSpy28SrbhE=/0x0:1000x667/750x500/data/photo/2023/07/24/64be25b6a0003.jpg"
+                alt="foto masjid agung sumenep"
+              />
+              <p class="caption">Masjid Agung Sumenep</p>
+            </div>
+            <div class="item">
+              <img
+                src="https://asset.kompas.com/crops/l6J-I-6IYP-iIYOvHGVLGmZoFPs=/50x0:893x562/750x500/data/photo/2023/08/24/64e71de354f32.jpg"
+                alt="foto pantai lombang"
+              />
+              <p class="caption">Pantai Lombang</p>
+            </div>
+            <div class="item">
+              <img
+                src="https://asset.kompas.com/crops/FCY2IkQYKGmjAJGOX7oz8xtp11U=/0x14:1067x725/750x500/data/photo/2022/10/03/633af13c1bc9a.jpeg"
+                alt="foto pantai sembilan"
+              />
+              <p class="caption">Pantai Sembilan</p>
+            </div>
+            <div class="item">
+              <img
+                src="https://asset.kompas.com/crops/LbdYykW5h8GCjQSbaaBmOc0GcmU=/189x54:835x484/750x500/data/photo/2019/05/18/1393636745.jpeg"
+                alt="foto asta tinggi sumenep"
+              />
+              <p class="caption">
+                Pemakaman para raja raja Sumenep (Asta Tinggi)
+              </p>
+            </div>
+          </div>
+          <button class="btn prev">Prev</button>
+          <button class="btn next">Next</button>
+          <div class="dots"></div>
+        </main>
+      </div>
     </div>
 
-    <div>
-      <label for="">Pergi ke Halaman Form</label><br />
-      <a href="pages/form.html">
-        <button>Go here</button>
-      </a>
-    </div>
-    <div>
-      <label for="">Pergi ke Halaman JSDasar</label><br />
-      <a href="pages/jsDasar.html">
-        <button>Go here</button>
-      </a>
-    </div>
-
-
+    <footer>
+      <h3>Designed by Love</h3>
+    </footer>
   </body>
 </html>
