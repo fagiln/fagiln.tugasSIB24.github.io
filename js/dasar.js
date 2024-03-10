@@ -57,6 +57,7 @@ document.addEventListener("DOMContentLoaded", function () {
   btnSymbol.addEventListener("click", () => {
     let symbol = document.getElementById("symbol").value;
     let triangle = "";
+    let triangleM = "";
     const size = 10;
     if (symbol != "") {
       for (let i = 1; i <= size; i++) {
@@ -64,10 +65,21 @@ document.addEventListener("DOMContentLoaded", function () {
         for (let j = 1; j <= i; j++) {
           line += symbol;
         }
-        triangle += line + '\n';
+        triangle += line + "\n";
+        document.getElementById("show-symbol").innerText = triangle;
       }
-      document.getElementById('show-symbol').innerText = triangle;
-
+      // Mirror
+      for (let i = size; i >= 1; i--) {
+        let line = "";
+        for (let k = 1; k <= size - i; k++) {
+          line += " ";
+        }
+        for (let j = 1; j <= i; j++) {
+          line += symbol;
+        }
+        triangleM += line + "\n";
+      }
+      document.getElementById("show-symbolM").innerText = triangleM;
     }
   });
 });
