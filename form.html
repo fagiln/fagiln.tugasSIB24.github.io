@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Form</title>
+
+
   </head>
   <body>
     <div>
@@ -15,7 +17,7 @@
           id="nama"
           placeholder="Nama Lengkap"
           required
-        /><br />
+        /><br /><br>
 
         <label for="email">Email</label><br />
         <input
@@ -25,7 +27,7 @@
           placeholder="Email aktif"
           required
         /><br />
-
+<br>
         <label for="nohp">No Hp</label><br />
         <input
           type="tel"
@@ -34,7 +36,7 @@
           placeholder="No HP aktif"
           required
         /><br />
-
+<br>
         <label for="">Jenis Kelamin</label><br />
         <input type="radio" name="jk" id="lakilaki" value="lakilaki" required />
         <label for="lakilaki">Laki-Laki</label><br />
@@ -47,7 +49,7 @@
         />
         <label for="perempuan">Perempuan</label>
         <br />
-
+<br>
         <label for="prodi">Prodi</label>
         <select name="prodi" id="prodi" required>
           <option value="">Pilih Prodi</option>
@@ -56,7 +58,7 @@
           <option value="manajemenInformatika">Manajemen Informatika</option>
         </select>
         <br />
-
+<br>
         <label for="hobi">Hobi</label><br />
         <input type="checkbox" name="membaca" id="membaca" />
         <label for="membaca">Membaca</label><br />
@@ -66,10 +68,11 @@
         <label for="menyanyi">Menyanyi</label><br />
         <input type="checkbox" name="olahraga" id="olahraga" />
         <label for="olahraga">Olahraga</label><br />
-
+<br>
         <label for="alamat">Alamat</label>
         <br />
         <textarea
+        placeholder="Alamat lengkap"
           name="alamat"
           id="alamat"
           cols="30"
@@ -77,10 +80,10 @@
           required
         ></textarea>
         <br />
-
+<br>
         <label for="foto_diri">Foto Diri</label><br />
         <input type="file" name="foto_diri" id="foto_diri" required /><br />
-
+<br>
         <button>Daftar</button>
       </form>
     </div>
