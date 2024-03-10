@@ -7,6 +7,7 @@
 @media screen and (max-width: 998px) {
     body {
         font-size: 14px;
+   
     }
 
     body .maps {
@@ -21,12 +22,18 @@
 
 
     }
+
 }
 
 @media screen and (max-width: 580px) {
+  
+
     nav {
         div {
+           
+            font-size: small;
             ul {
+                font-size: x-small;
                 display: flex;
                 flex-direction: column;
             }
