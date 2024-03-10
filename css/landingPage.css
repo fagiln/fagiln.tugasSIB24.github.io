@@ -4,19 +4,41 @@
     padding: 0;
 }
 
+@media screen and (max-width: 998px) {
+    body {
+        font-size: 14px;
+    }
+
+    body .maps {
+
+        display: flex;
+        flex-direction: column;
+
+        .word {
+            width: 100%;
+        }
+
+
+    }
+}
+
 nav {
     margin-bottom: 50px;
     display: flex;
+position: fixed;
+z-index: 1;
+width: 100%;
     justify-content: center;
     background-color: #08788c;
     color: white;
 
     div {
+
         align-items: center;
         display: flex;
         justify-content: space-between;
 
-       
+
         ul {
             display: flex;
             list-style: none;
