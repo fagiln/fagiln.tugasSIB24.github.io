@@ -22,12 +22,23 @@
     }
 }
 
+@media screen and (max-width: 580px) {
+    nav {
+        div {
+            ul {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+    }
+}
+
 nav {
     margin-bottom: 50px;
     display: flex;
-position: fixed;
-z-index: 1;
-width: 100%;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
     justify-content: center;
     background-color: #08788c;
     color: white;
