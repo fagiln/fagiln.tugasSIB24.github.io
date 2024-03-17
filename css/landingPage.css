@@ -8,6 +8,9 @@
     body {
         font-size: 14px;
 
+        .custom-container {
+            width: 100%;
+        }
     }
 
     body .maps {
@@ -190,6 +193,8 @@ nav {
 }
 
 #carousel {
+
+    align-items: center;
     overflow: auto;
     scroll-behavior: smooth;
     scrollbar-width: none;
@@ -204,7 +209,7 @@ nav {
     display: flex;
     justify-content: center;
     align-content: center;
-    background: white;
+    background: rgba(255, 255, 255, 0);
     border: none;
     padding: 8px;
     border-radius: 50%;
@@ -215,14 +220,14 @@ nav {
 
 #prev {
     top: 50%;
-    left: -90px;
+    left: -20px;
     transform: translate(50%, -50%);
     display: none;
 }
 
 #next {
     top: 50%;
-    right: -90px;
+    right: -20px;
     transform: translate(-50%, -50%);
 }
 
@@ -241,8 +246,7 @@ nav {
 }
 
 .item {
-    width: 180px;
-    height: 180px;
+
     background: white;
     position: relative;
 
