@@ -7,7 +7,7 @@
 @media screen and (max-width: 998px) {
     body {
         font-size: 14px;
-   
+
     }
 
     body .maps {
@@ -26,12 +26,13 @@
 }
 
 @media screen and (max-width: 580px) {
-  
+
 
     nav {
         div {
-           
+
             font-size: small;
+
             ul {
                 font-size: x-small;
                 display: flex;
@@ -181,6 +182,104 @@ nav {
     }
 }
 
+
+#wrapper {
+    width: 100%;
+    max-width: 964px;
+    position: relative;
+}
+
+#carousel {
+    overflow: auto;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+}
+
+#carousel::-webkit-scrollbar {
+    height: 0;
+}
+
+#prev,
+#next {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background: white;
+    border: none;
+    padding: 8px;
+    border-radius: 50%;
+    outline: 0;
+    cursor: pointer;
+    position: absolute;
+}
+
+#prev {
+    top: 50%;
+    left: -90px;
+    transform: translate(50%, -50%);
+    display: none;
+}
+
+#next {
+    top: 50%;
+    right: -90px;
+    transform: translate(-50%, -50%);
+}
+
+#next:hover,
+#prev:hover {
+    background: #08788c;
+    opacity: 1;
+}
+
+#content {
+    display: grid;
+    grid-gap: 16px;
+    grid-auto-flow: column;
+    margin: auto;
+    box-sizing: border-box;
+}
+
+.item {
+    width: 180px;
+    height: 180px;
+    background: white;
+    position: relative;
+
+    img {
+        width: 180px;
+        height: 180px;
+        object-fit: cover;
+
+    }
+
+
+
+    span {
+        text-align: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: black;
+        font-size: 16px;
+        font-weight: bold;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+    }
+}
+
+
+.item:hover {
+    .hover-text {
+        opacity: 1;
+    }
+
+    .food {
+        opacity: 50%;
+        transition: filter 0.3s ease
+    }
+}
 
 .button {
     font-weight: bold;
