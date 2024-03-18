@@ -4,12 +4,29 @@
     padding: 0;
 }
 
+
+
 @media screen and (max-width: 998px) {
     body {
         font-size: 14px;
 
         .custom-container {
             width: 100%;
+        }
+
+        .maps {
+            padding: 30px 30px;
+
+            .frame {
+                display: flex;
+                justify-content: center;
+                padding-left: 0px;
+
+                iframe {
+                    width: 300px;
+                    height: 200px;
+                }
+            }
         }
     }
 
@@ -182,6 +199,20 @@ nav {
                 background-color: #8d8d8d;
             }
         }
+    }
+}
+
+
+.maps {
+    padding: 30px 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+
+    .frame {
+        padding-left: 50px;
+
     }
 }
 
