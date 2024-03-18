@@ -240,7 +240,7 @@ nav {
     display: flex;
     justify-content: center;
     align-content: center;
-    background: rgba(255, 255, 255, 0);
+    background: rgba(255, 255, 255, 0.397);
     border: none;
     padding: 8px;
     border-radius: 50%;
