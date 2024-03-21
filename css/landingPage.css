@@ -35,7 +35,8 @@
         display: flex;
         flex-direction: column;
 
-        .word {
+        .word .hover-tex {
+
             width: 100%;
             padding-bottom: 30px;
         }
@@ -334,6 +335,16 @@ nav {
 
 p {
     color: #565656;
+}
+
+.more {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    div{
+        text-align: start;
+    }
+
 }
 
 footer {
