@@ -342,6 +342,7 @@ p {
     justify-content: center;
     width: 100%;
     div{
+        padding-left: 30px;
         text-align: start;
     }
 
