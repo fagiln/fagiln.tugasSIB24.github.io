@@ -1,5 +1,5 @@
 let elementBody = document.getElementById("articles");
-let urlCrudcrud = "4f55c742930c4dee96e0aea3153220bc";
+let urlCrudcrud = "e16e084d849c4461bc39d9d684f53617";
 let urlApi = " https://crudcrud.com/api/" + urlCrudcrud + "/products";
 
 function postData() {
@@ -24,7 +24,8 @@ function postData() {
     })
       .then((res) => res.json())
       .then((data) => {
-        alert("Produk berhasil dibuat, silahkan refresh browser !!");
+        refreshData();
+        alert("Produk berhasil dibuat !!");
         console.log(data);
       })
       .catch((error) => {
@@ -41,6 +42,7 @@ function refreshData() {
       alert("Url API anda sudah Expired !");
     } else {
       res.json().then((response) => {
+        elementBody.innerHTML = "";
         response.forEach((element) => {
           elementBody.innerHTML += `
            <article id="${element._id}">
@@ -64,7 +66,6 @@ function refreshData() {
            `;
         });
       });
-     
     }
   });
 }
@@ -93,7 +94,8 @@ function updateData(id) {
       body: JSON.stringify(data),
     })
       .then((data) => {
-        alert("Produk berhasil diupdate, silahkan refresh browser !!");
+        refreshData();
+        alert("Produk berhasil diupdate !!");
         console.log(data);
       })
       .catch((error) => {
@@ -103,40 +105,6 @@ function updateData(id) {
     alert("input tidak boleh kosong !");
   }
 }
-// function updateData(id) {
-//   let image = document.getElementById("image").value;
-//   let name = document.getElementById("name").value;
-//   let price = document.getElementById("price").value;
-//   let description = document.getElementById("description").value;
-
-//   // Membuat objek data yang akan diperbarui
-//   let data = {
-//     image: image,
-//     name: name,
-//     price: price,
-//     description: description,
-//   };
-
-//   // Mengirim permintaan PUT ke endpoint API dengan ID yang sesuai
-//   let url = urlApi + `/${id}`;
-//   fetch(url, {
-//     method: "PUT", // Menggunakan metode PUT untuk pembaruan data
-//     headers: {
-//       "Content-Type": "application/json",
-//     },
-//     body: JSON.stringify(data),
-//   })
-//     .then((response) => {
-//       if (!response.ok) {
-//         throw new Error("Failed to update data");
-//       }
-//       // Menampilkan pesan sukses atau melakukan tindak lanjut lainnya jika perlu
-//       console.log("Data updated successfully");
-//     })
-//     .catch((error) => {
-//       console.error("Error", error);
-//     });
-// }
 
 function deleteData(id) {
   let url = urlApi + `/${id}`;

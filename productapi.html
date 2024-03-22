@@ -4,7 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Produk</title>
-    <link rel="shortcut icon" href="assets/img/klipartz.com.png" type="image/x-icon">
+    <link
+      rel="shortcut icon"
+      href="assets/img/klipartz.com.png"
+      type="image/x-icon"
+    />
     <!-- CDN poppins google -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -17,34 +21,43 @@
   </head>
   <body>
     <div class="form">
-      <div style="color: #08788c;">
+      <div style="color: #08788c">
         <h2>Selamat Datang di CRUD produk API</h2>
       </div>
       <div>
         <label for="image">Link Foto</label><br />
-        <input required type="text" id="image" placeholder="Masukkan link, contoh: https://foto.jpg" />
+        <input
+          required
+          type="text"
+          id="image"
+          placeholder="Masukkan link, contoh: https://foto.jpg"
+          value="https://awsimages.detik.net.id/community/media/visual/2023/08/18/resep-nasi-goreng-jawa_43.jpeg?w=600&q=90"
+        />
       </div>
       <div>
         <label for="name">Nama Produk</label><br />
         <input
+        value="Nasi Goreng"
           required
           type="text"
           id="name"
-          placeholder="Masukkan Nama produk mu"
+          placeholder="Masukkan Nama produk mu, contoh: Nasi Goreng"
         />
       </div>
       <div>
         <label for="price">Harga Produk</label><br />
         <input
+        value="20000"
           required
           type="text"
           id="price"
-          placeholder="Masukkan Harga (Rp)"
+          placeholder="Masukkan Harga (Rp), contoh: 20000"
         />
       </div>
       <div>
         <label for="description">Deskripsi Produk</label><br />
         <textarea
+        
           required
           placeholder="Masukkan deskripsi produkmu"
           id="description"
