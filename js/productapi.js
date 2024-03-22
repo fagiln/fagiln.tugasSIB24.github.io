@@ -36,32 +36,37 @@ function postData() {
 }
 
 function refreshData() {
-  fetch(urlApi)
-    .then((res) => res.json())
-    .then((response) => {
-      response.forEach((element) => {
-        elementBody.innerHTML += `
-       <article id="${element._id}">
-       <div class="article-wrapper">
-         <figure>
-           <img src="${element.image}" alt="" />
-         </figure>
-         <div class="article-body">
-           <h2>${element.name}</h2>
-           <h3>Rp.${element.price}</h3>
-           <p>
-            ${element.description}
-           </p>
-           <div style = "display : flex; justify-content : space-between">
-           <button onclick="deleteData('${element._id}')">Hapus</button>
-           <button onclick="updateData('${element._id}')">Update</button>
+  fetch(urlApi).then((res) => {
+    if (!res.ok) {
+      alert("Url API anda sudah Expired !");
+    } else {
+      res.json().then((response) => {
+        response.forEach((element) => {
+          elementBody.innerHTML += `
+           <article id="${element._id}">
+           <div class="article-wrapper">
+             <figure>
+               <img src="${element.image}" alt="" />
+             </figure>
+             <div class="article-body">
+               <h2>${element.name}</h2>
+               <h3>Rp.${element.price}</h3>
+               <p>
+                ${element.description}
+               </p>
+               <div style = "display : flex; justify-content : space-between">
+               <button onclick="deleteData('${element._id}')">Hapus</button>
+               <button onclick="updateData('${element._id}')">Update</button>
+               </div>
+             </div>
            </div>
-         </div>
-       </div>
-     </article>
-       `;
+         </article>
+           `;
+        });
       });
-    });
+     
+    }
+  });
 }
 refreshData();
 // resetInput();
