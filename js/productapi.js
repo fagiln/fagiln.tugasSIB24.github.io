@@ -1,5 +1,5 @@
 let elementBody = document.getElementById("articles");
-let urlCrudcrud = "e16e084d849c4461bc39d9d684f53617";
+let urlCrudcrud = "4f55c742930c4dee96e0aea3153220bc";
 let urlApi = " https://crudcrud.com/api/" + urlCrudcrud + "/products";
 
 function postData() {
