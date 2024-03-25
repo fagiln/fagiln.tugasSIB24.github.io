@@ -3,12 +3,19 @@
 }
 button {
   border: none;
+  border-radius: 20px;
   font-size: medium;
   background-color: #08788c;
   color: white;
   padding: 10px 30px;
   margin-bottom: 10px;
+  transition: background-color 0.4s ease-in-out;
 
+
+  &:hover{
+    background-color: #065866;
+
+  }
 }
 .form {
   display: flex;
@@ -93,7 +100,7 @@ article img {
   object-fit: cover;
   transform-origin: center;
   transform: scale(var(--img-scale));
-  transition: transform 0.4s ease-in-out;
+    transition: transform 0.4s ease-in-out;
 }
 
 .article-body {
@@ -178,29 +185,7 @@ body {
   }
 }
 
-@container card (min-width: 380px) {
-  .article-wrapper {
-    display: grid;
-    grid-template-columns: 100px 1fr;
-    gap: 16px;
-  }
 
-  .article-body {
-    padding-left: 0;
-  }
-
-  figure {
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-  }
-
-  figure img {
-    height: 100%;
-    aspect-ratio: 1;
-    object-fit: cover;
-  }
-}
 
 .sr-only:not(:focus):not(:active) {
   clip: rect(0 0 0 0);

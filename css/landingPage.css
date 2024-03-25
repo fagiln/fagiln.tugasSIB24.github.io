@@ -322,10 +322,12 @@ nav {
     background-color: white;
     padding: 10px 40px;
     outline: none;
-    border-radius: 0;
+    border: none;
+    border-radius: 20px;
 
     &:hover {
         color: #08788c;
+        transition: color 0.2s ease-in-out;
     }
 }
 
